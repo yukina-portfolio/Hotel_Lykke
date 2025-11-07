@@ -1,0 +1,382 @@
+@charset "UTF-8";
+
+/* The settings to apply to all pages */
+
+html {
+  font-family: 'Playfair Display', 'Noto Sans JP', sans-serif;
+  color: #c7a391;
+  font-size: 16px;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 0.1rem;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  background-color: #f8f6f2;
+  margin: 0;
+  padding: 0;
+}
+
+.nocenter {
+  text-align: initial;
+}
+
+/* Apply to all pages ‐ header */
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2%;
+  z-index: 1000;
+}
+
+.logo {
+  color: #d8b7a8;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 30px;
+  height: 25px;
+  z-index: 1100;
+}
+
+.menu-btn span {
+  background: #c7a391;
+  display: block;
+  justify-content: flex-end;
+  height: 3px;
+  border-radius: 3px;
+}
+
+.nav {
+  position: fixed;
+  top: 0; right: -100%;
+  background: rgba(255, 255, 255, 0.90);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: right 0.5s ease;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav li {
+  margin: 10% 0;
+}
+
+.nav a {
+  font-size: 2rem;
+  color: #d8b7a8;
+  text-decoration: none;
+  transition: opacity 0.3s;
+}
+
+a {
+  color: #c7a391;
+  text-decoration: none;
+}
+
+#menu-toggle:checked ~ .nav {
+  right: 0;
+}
+
+#menu-toggle:checked + .menu-btn span:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+#menu-toggle:checked + .menu-btn span:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle:checked + .menu-btn span:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Apply to all pages ‐ hero */
+
+.hero {
+  height: 100vh;
+}
+
+.hero1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/* Apply to all pages ‐ main */
+
+.gap {
+  margin-top: 15%;
+}
+
+.wave-top, .wave-bottom {
+  display: block;
+  width: 100%;
+  height: 500px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.flex div {
+  flex: 1;
+}
+
+.flex img {
+  width: 80%;
+  border-radius: 100px;
+}
+
+h2::before {
+  content: "❁";
+  display: inline-block;
+  color: #c7a391;
+}
+
+h2::after {
+  content: "❁";
+  display: inline-block;
+  color: #c7a391;
+}
+
+h3 {
+  margin: 3% 0;
+}
+
+p {
+  margin: 3% 25% 0;
+}
+
+.green p, #access p {
+  margin: 3% 0;
+}
+
+#reserve, #access {
+  padding: 5%;
+}
+
+/* concept */
+
+.green {
+  background-color: #cfd8c2;
+  padding: 0 5%;
+}
+
+#concept {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.items {
+  margin-bottom: 30%;
+}
+
+.item:nth-child(1) { transform: translateY(0); }
+.item:nth-child(2) { transform: translateY(300px); }
+
+.circle {
+  background-color: #f8f6f2;
+  padding: 10%;
+}
+
+.circle1 {
+  border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
+}
+
+.circle2 {
+  border-radius: 60% 40% 70% 50% / 50% 60% 40% 70%;
+}
+
+.sauna {
+  width: 50%;
+  border-radius: 100px;
+}
+
+/* room & price */
+
+#room-price {
+  padding: 0 5%;
+}
+
+.room img {
+  width: 50%;
+  border-radius: 100px;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* reserve */
+
+#reserve {
+  color: white;
+  background-color: #EED3B1;
+}
+
+#reserve h2::before {
+  content: "❁";
+  display: inline-block;
+  color: white;
+}
+
+#reserve h2::after {
+  content: "❁";
+  display: inline-block;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 30%;
+  margin: 3% auto;
+}
+
+label {
+  font-weight: 600;
+}
+
+input, select {
+  background-color: white;
+  color: #EED3B1;
+  border-radius: 10px;
+  width: 100%;
+  padding: 3%;
+}
+
+button {
+  background-color: white;
+  color: #EED3B1;
+  border: none;
+  border-radius: 50px;
+  padding: 3% 10%;
+}
+
+button:hover {
+  background-color: #f8f6f2;
+}
+
+/* access */
+
+/* Apply to all pages ‐ footer */
+
+footer {
+  position: relative;
+  background-color: #cfd8c2;
+}
+
+footer h3 {
+  position: fixed;
+  bottom: -3%;
+  right: 2%;
+  background-color: white;
+  border-radius: 50px;
+  padding: 2% 3%;
+}
+
+/* Mobile support */
+@media(max-width: 767px) {
+    
+    html {
+      font-size: clamp(12px, 1.2vw, 16px);
+    }
+
+    /* Apply to all pages ‐ hero */
+
+    .hero1 {
+      width: 50%;
+    }
+
+    /* Apply to all pages ‐ main */
+
+    .flex {
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .flex div {
+      flex: initial;
+    }
+
+    .flex img {
+      width: 80%;
+      border-radius: 30px;
+    }
+
+    .order1 {
+      order: 1;
+    }
+
+    .order2 {
+      order: 2;
+    }
+
+    /* concept */
+
+    .item:nth-child(1) { transform: translateY(0); }
+    .item:nth-child(2) { transform: translateY(0); }
+
+    #concept {
+      width: 100%;
+    }
+
+    .circle {
+      padding: 15%;
+    }
+
+    .sauna {
+      width: 100%;
+      border-radius: 50px;
+    }
+
+    /* room & price */
+
+    .room img {
+      width: 80%;
+      border-radius: 50px;
+    }
+
+    /* reserve */
+
+    form {
+      max-width: 80%;
+    }
+
+    p {
+      margin: 3% 0;
+    }
+}

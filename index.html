@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ポートフォリオサイトです。">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Home｜Hotel Lykke</title>
+</head>
+<body id="home">
+    <header>
+        <div class="logo"><a href="#home">Hotel Lykke</a></div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-btn">
+            <span></span><span></span><span></span>
+        </label>
+        
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#room-price">Room & Price</a></li>
+                <li><a href="#reserve">Reserve</a></li>
+                <li><a href="#access">Access</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <img src="images/hero1.jpg" alt="hero" class="hero1" width="300px" height="auto">
+    </div>
+
+    <main>
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-top">
+            <path d="M0,50 C360,80 1080,20 1440,50 L1440,100 L0,100 Z" fill="#cfd8c2"/>
+        </svg>
+        
+        <div class="green">
+            <div id="concept" class="circle circle1">
+                <h2>Concept</h2>
+                <h3>心を休める北欧の宿</h3>
+                <p>
+                    Hotel Lykke（リュッケ）は、“小さな幸せ” を届ける北欧風の宿です。ゆったりとした時間、柔らかな光、木のぬくもり——。訪れるすべての人に、日常から少し離れた心地よい体験をお届けします。朝の光に目覚め、窓の向こうの景色に心を休め、夜には静かな灯りのもとでくつろぐ。ここで過ごす時間は、誰にとっても小さな物語になることでしょう。
+                </p>
+            </div>
+
+            <div class="flex gap items">
+                <div class="item">
+                    <img src="images/item1.jpg" alt="item">
+                </div>
+                <div class="item">
+                    <img src="images/item2.jpg" alt="item">
+                </div>
+            </div>
+
+            <img src="images/item5.jpg" class="sauna gap1" alt="sauna">
+
+            <div class="flex gap">
+                <div class="order2">
+                    <img src="images/sauna.jpg" alt="sauna">
+                </div>
+                <div class="circle circle2 order1">
+                    <h2>Sauna</h2>
+                    <p>
+                        Hotel Lykkeでは、天然木に包まれたプライベートサウナで、心も体もゆったりと解きほぐす時間をお届けします。ほのかに香る木のぬくもりと、温かな蒸気に身を委ねるひとときは、日常の喧騒を忘れさせ、心に小さな幸せを灯します。ここで過ごす時間は、体だけでなく、心の贅沢な休息にもなることでしょう。
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap">
+                <div class="circle circle1">
+                    <h2>Hygge Time</h2>
+                    <p>
+                        夜、灯りを少し落として。柔らかなキャンドルの光が、静かな時間を包み込みます。旅の終わりに、心をゆるめるひとときを。北欧の言葉で“ヒュッゲ”とは、幸福を感じる瞬間のこと。Hotel Lykkeでは、その時間をお届けします。
+                    </p>
+                </div>
+                <div>
+                    <img src="images/candle.jpg" alt="candle">
+                </div>
+            </div>
+
+            <div class="flex gap">
+                <div class="order2">
+                    <img src="images/breakfast.jpg" alt="breakfasta">
+                </div>
+                <div class="circle circle2 order1">
+                    <h2>Breakfast</h2>
+                    <p>
+                        朝、窓から差し込むやわらかな光。焙煎したコーヒーの香りと、森で摘んだベリーの甘酸っぱさ。木の食卓に、温かなパンとハーブバターを。Hotel Lykkeの朝は、森の息づかいとともに始まります。
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-bottom">
+            <path d="M0,50 C360,20 1080,80 1440,50 L1440,0 L0,0 Z" fill="#cfd8c2"/>
+        </svg>
+
+        <div id="room-price">
+            <h2>Room & Price</h2>
+            <div class="room">
+                <h3>Standard Room</h3>
+                <img src="images/room1.jpg" alt="room">
+                <p>スタンダードルーム</p>
+                <p>
+                    やわらかな木の香りが漂う、シンプルで心安らぐお部屋。自然素材の家具と淡いリネンのベッドが、静かな夜を包み込みます。
+                </p>
+                <div class="nocenter price">
+                    <p>
+                        ・広さ：22㎡<br>
+                        ・定員：2名<br>
+                        ・設備：シャワー、ミニバー、Bluetoothスピーカー<br>
+                        ・料金：¥18,000〜 / 1泊（2名1室）
+                    </p>
+                </div>
+            </div>
+
+            <div class="room gap">
+                <h3>Comfort Room</h3>
+                <img src="images/room2.jpg" alt="room">
+                <p>コンフォートルーム</p>
+                <p>
+                    北欧デザインの温もりを感じる、少し贅沢な空間。窓辺のソファでコーヒーを楽しみながら、穏やかな時間をお過ごしください。
+                </p>
+                <div class="nocenter price">
+                    <p>
+                        ・広さ：30㎡<br>
+                        ・定員：2〜3名<br>
+                        ・設備：バスタブ、ネスプレッソ、空気清浄機<br>
+                        ・料金：¥26,000〜 / 1泊（2名1室）
+                    </p>
+                </div>
+            </div>
+
+            <div class="room gap">
+                <h3>Sauna Suite</h3>
+                <img src="images/room3.jpg" alt="room">
+                <p>サウナスイート</p>
+                <p>
+                    Hotel Lykke自慢のプライベートサウナ付きスイート。木の香りとともに心身をととのえ、ラウンジスペースでワインを愉しむ特別な夜を。
+                </p>
+                <div class="nocenter price">
+                    <p>
+                        ・広さ：45㎡<br>
+                        ・定員：2名<br>
+                        ・設備：専用サウナ、バルコニー、ミニワインセラー<br>
+                        ・料金：¥42,000〜 / 1泊（2名1室）
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex gap items">
+                <div class="item">
+                    <img src="images/item3.jpg" alt="item">
+                </div>
+                <div class="item">
+                    <img src="images/item4.jpg" alt="item">
+                </div>
+            </div>
+        </div>
+
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-top">
+            <path d="M0,50 C360,80 1080,20 1440,50 L1440,100 L0,100 Z" fill="#EED3B1"/>
+        </svg>
+
+        <div id="reserve">
+            <h2>Reserve</h2>
+            <form>
+                <label for="checkin">チェックイン日</label>
+                <input type="date" id="checkin" name="checkin" required>
+                
+                <label for="checkout">チェックアウト日</label>
+                <input type="date" id="checkout" name="checkout" required>
+                
+                <label for="guests">ご宿泊人数</label>
+                <select id="guests" name="guests">
+                    <option value="">選択してください</option>
+                    <option value="1">1名</option>
+                    <option value="2">2名</option>
+                    <option value="3">3名</option>
+                    <option value="4">4名</option>
+                </select>
+                
+                <label for="room">お部屋タイプ</label>
+                <select id="room" name="room">
+                    <option value="">選択してください</option>
+                    <option value="standard">スタンダードルーム</option>
+                    <option value="comfort">コンフォートルーム</option>
+                    <option value="sauna">サウナスイート</option>
+                </select>
+                
+                <button type="submit">予約する</button>
+            </form>
+        </div>
+
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-bottom">
+            <path d="M0,50 C360,20 1080,80 1440,50 L1440,0 L0,0 Z" fill="#EED3B1"/>
+        </svg>
+
+        <div id="access" class="gap">
+            <h2>Access</h2>
+            <h3>Hotel Lykke</h3>
+            <div class="flex">
+                <div>
+                <h4>住所</h4>
+                <p>
+                    〒389-0111　長野県北佐久郡軽井沢町星野エリア内<br>
+                    TEL：0267-XX-XXXX<br>
+                    Check-in　15:00〜<br>
+                    Check-out　11:00
+                </p>
+                <h4>アクセス方法</h4>
+                <p>
+                    ・JR北陸新幹線「軽井沢駅」よりタクシーで約10分<br>
+                    ・しなの鉄道「中軽井沢駅」より徒歩約12分
+                </p>
+                <p>
+                    森の小径を抜けると、小さな灯りが静かに迎えるホテル・リュッケ。やわらかな空気と自然の音に包まれながら、ゆったりとした時間をお過ごしください。
+                </p>
+                <h4>駐車場</h4>
+                <p>
+                    宿泊者専用の無料駐車スペースがございます。台数に限りがございますので、事前のご予約をおすすめいたします。
+                </p>
+            </div>
+            <div>
+                <img src="images/access.png" alt="access">
+            </div>
+            </div>
+        </div>
+    </main>
+
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-top">
+        <path d="M0,50 C360,80 1080,20 1440,50 L1440,100 L0,100 Z" fill="#cfd8c2"/>
+    </svg>
+
+    <footer>
+        <h3><a href="#reserve">ご予約はこちら</a></h3>
+    </footer>
+</body>
