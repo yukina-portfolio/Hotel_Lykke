@@ -32,6 +32,45 @@ body {
   text-align: initial;
 }
 
+.slides {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 30%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 9s infinite ease-in-out;
+}
+
+.slide::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.slide1 { background-image: url('images/hotel2.jpg'); animation-delay: 0s; }
+.slide2 { background-image: url('images/item5.jpg'); animation-delay: 3s; }
+.slide3 { background-image: url('images/hotel1.jpg'); animation-delay: 6s; }
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  10%  { opacity: 1; }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
 /* Apply to all pages ‐ header */
 
 header {
@@ -144,6 +183,10 @@ a {
   margin-top: 15%;
 }
 
+.gap1 {
+  margin-top: 100%;
+}
+
 .wave-top, .wave-bottom {
   display: block;
   width: 100%;
@@ -198,7 +241,7 @@ p {
 
 .green {
   background-color: #cfd8c2;
-  padding: 0 5%;
+  padding: 5%;
 }
 
 #concept {
@@ -224,11 +267,6 @@ p {
 
 .circle2 {
   border-radius: 60% 40% 70% 50% / 50% 60% 40% 70%;
-}
-
-.sauna {
-  width: 50%;
-  border-radius: 100px;
 }
 
 /* room & price */
@@ -325,6 +363,10 @@ footer h3 {
       font-size: clamp(12px, 1.2vw, 16px);
     }
 
+    .slides {
+      height: 50%;
+    }
+
     /* Apply to all pages ‐ hero */
 
     .hero p {
@@ -333,6 +375,14 @@ footer h3 {
     }
 
     /* Apply to all pages ‐ main */
+
+    .gap1 {
+      margin-top: 150%;
+    }
+
+    .wave-top, .wave-bottom {
+      height: 300px;
+    }
 
     .flex {
       flex-wrap: wrap;
