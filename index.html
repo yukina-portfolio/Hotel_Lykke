@@ -101,7 +101,7 @@
                 </div>
             </div>
         </div>
-        
+
         <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-bottom">
             <path d="M0,50 C360,20 1080,80 1440,50 L1440,0 L0,0 Z" fill="#cfd8c2"/>
         </svg>
@@ -169,43 +169,45 @@
             </div>
         </div>
 
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-top">
-            <path d="M0,50 C360,80 1080,20 1440,50 L1440,100 L0,100 Z" fill="#EED3B1"/>
-        </svg>
-
-        <div id="reserve">
-            <h2>Reserve</h2>
-            <form>
-                <label for="checkin">チェックイン日</label>
-                <input type="date" id="checkin" name="checkin" required>
+        <div>
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-top">
+                <path d="M0,50 C360,80 1080,20 1440,50 L1440,100 L0,100 Z" fill="#EED3B1"/>
+            </svg>
+            
+            <div id="reserve">
+                <h2>Reserve</h2>
+                <form>
+                    <label for="checkin">チェックイン日</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                    
+                    <label for="checkout">チェックアウト日</label>
+                    <input type="date" id="checkout" name="checkout" required>
                 
-                <label for="checkout">チェックアウト日</label>
-                <input type="date" id="checkout" name="checkout" required>
+                    <label for="guests">ご宿泊人数</label>
+                    <select id="guests" name="guests">
+                        <option value="">選択してください</option>
+                        <option value="1">1名</option>
+                        <option value="2">2名</option>
+                        <option value="3">3名</option>
+                        <option value="4">4名</option>
+                    </select>
                 
-                <label for="guests">ご宿泊人数</label>
-                <select id="guests" name="guests">
-                    <option value="">選択してください</option>
-                    <option value="1">1名</option>
-                    <option value="2">2名</option>
-                    <option value="3">3名</option>
-                    <option value="4">4名</option>
-                </select>
+                    <label for="room">お部屋タイプ</label>
+                    <select id="room" name="room">
+                        <option value="">選択してください</option>
+                        <option value="standard">スタンダードルーム</option>
+                        <option value="comfort">コンフォートルーム</option>
+                        <option value="sauna">サウナスイート</option>
+                    </select>
                 
-                <label for="room">お部屋タイプ</label>
-                <select id="room" name="room">
-                    <option value="">選択してください</option>
-                    <option value="standard">スタンダードルーム</option>
-                    <option value="comfort">コンフォートルーム</option>
-                    <option value="sauna">サウナスイート</option>
-                </select>
-                
-                <button type="submit">予約する</button>
-            </form>
+                    <button type="submit">予約する</button>
+                </form>
+            </div>
+            
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-bottom">
+                <path d="M0,50 C360,20 1080,80 1440,50 L1440,0 L0,0 Z" fill="#EED3B1"/>
+            </svg>
         </div>
-
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none" class="wave-bottom">
-            <path d="M0,50 C360,20 1080,80 1440,50 L1440,0 L0,0 Z" fill="#EED3B1"/>
-        </svg>
 
         <div id="access" class="gap">
             <h2>Access</h2>
