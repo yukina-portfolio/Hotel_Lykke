@@ -272,11 +272,14 @@ p {
 .circle3 {
   position: relative;
   border: 3px solid #cfd8c2;
-  border-radius: 60% 40% 70% 50% / 50% 60% 40% 70%;
   padding: 5%;
 }
 
-.circle3::before {
+.circle4 {
+  border-radius: 60% 40% 70% 50% / 50% 60% 40% 70%;
+}
+
+.circle4::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -285,14 +288,11 @@ p {
   transform: rotate(5deg);
 }
 
-.circle4 {
-  position: relative;
-  border: 3px solid #cfd8c2;
+.circle5 {
   border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
-  padding: 5%;
 }
 
-.circle4::before {
+.circle5::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -503,6 +503,12 @@ footer h3 a {
 
     .order2 {
       order: 2;
+    }
+
+    /* wellness */
+
+    .circle3 {
+      padding: 10%;
     }
 
     /* concept */
