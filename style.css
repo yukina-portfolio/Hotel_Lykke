@@ -37,7 +37,7 @@ body {
   position: relative;
   top: 100%;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   z-index: 0;
 }
@@ -56,7 +56,7 @@ body {
 
 .slide {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -68,7 +68,7 @@ body {
   content: "";
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100vh;
+  width: 100vw; height: 100vh;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -91,7 +91,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   padding: 2%;
   z-index: 1000;
 }
@@ -129,8 +129,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   transition: right 0.5s ease;
 }
 
@@ -170,25 +170,11 @@ a {
 
 /* Apply to all pages ‐ hero */
 
-.hero {
+.hero.flex {
+  gap: 0;
+  padding: 0 5%;
   height: 100vh;
   animation: fadeIn 5s cubic-bezier(0.33, 1, 0.68, 1) forwards;
-}
-
-.hero img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-.hero p {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  z-index: -1;
 }
 
 @keyframes fadeIn {
@@ -202,13 +188,9 @@ a {
 
 /* Apply to all pages ‐ main */
 
-.gap {
-  margin-top: 15%;
-}
-
 .wave-top, .wave-bottom {
   display: block;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -224,24 +206,13 @@ a {
 }
 
 .flex img {
-  width: 80vh;
-  height: auto;
   border-radius: 100px;
-}
-
-.wellness {
-  padding: 10% 5% 0;
-}
-
-.wellness img {
-  width: 100vh;
-  border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
-  margin-top: 10%;
 }
 
 h2::before {
   content: "❁";
   display: inline-block;
+  font-size: 2rem;
   color: #d8b7a8;
   margin-right: 0.5rem;
 }
@@ -249,17 +220,15 @@ h2::before {
 h2::after {
   content: "❁";
   display: inline-block;
+  font-size: 2rem;
   color: #d8b7a8;
   margin-left: 0.5rem;
-}
-
-h3 {
-  margin: 3% 0;
 }
 
 h3::before {
   content: "❁";
   display: inline-block;
+  font-size: 1.5rem;
   color: #cfd8c2;
   margin-right: 0.5rem;
 }
@@ -267,8 +236,13 @@ h3::before {
 h3::after {
   content: "❁";
   display: inline-block;
+  font-size: 1.5rem;
   color: #cfd8c2;
   margin-left: 0.5rem;
+}
+
+.gap {
+  margin-top: 15%;
 }
 
 p {
@@ -283,6 +257,50 @@ p {
   padding: 5%;
 }
 
+/* wellness */
+
+.wellness {
+  padding: 10% 5% 0;
+}
+
+.wellness img {
+  width: 100vw;
+  border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
+  margin-top: 10%;
+}
+
+.circle3 {
+  position: relative;
+  border: 3px solid #cfd8c2;
+  border-radius: 60% 40% 70% 50% / 50% 60% 40% 70%;
+  padding: 5%;
+}
+
+.circle3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid #cfd8c2;
+  border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
+  transform: rotate(5deg);
+}
+
+.circle4 {
+  position: relative;
+  border: 3px solid #cfd8c2;
+  border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
+  padding: 5%;
+}
+
+.circle4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid #cfd8c2;
+  border-radius: 60% 40% 70% 50% / 50% 60% 40% 70%;
+  transform: rotate(-5deg);
+}
+
 /* concept */
 
 .green {
@@ -293,21 +311,26 @@ p {
 }
 
 #concept {
+  width: 50vw;
+  height: auto;
   margin: 0 auto;
 }
 
 .items {
-  height: 100vh;
-  margin-bottom: 30%;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 50% 0;
+  gap: 10%;
 }
 
 .item:nth-child(1) { transform: translateY(0); }
 .item:nth-child(2) { transform: translateY(300px); }
 
 .circle {
+  position: relative;
   background-color: #f8f6f2;
   padding: 10%;
-  width: 100vh;
+  width: 100vw;
   height: auto;
 }
 
@@ -315,8 +338,26 @@ p {
   border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
 }
 
+.circle1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid #d8b7a8;
+  border-radius: 60% 40% 70% 50% / 50% 60% 40% 70%;
+  transform: rotate(5deg);
+}
+
 .circle2 {
   border-radius: 60% 40% 70% 50% / 50% 60% 40% 70%;
+}
+
+.circle2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 3px solid #d8b7a8;
+  border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
+  transform: rotate(5deg);
 }
 
 /* room & price */
@@ -325,8 +366,16 @@ p {
   padding: 0 5%;
 }
 
+.room {
+  margin-top: 10%;
+}
+
+.room h3 {
+  margin-bottom: 3%;
+}
+
 .room img {
-  width: 100vh;
+  width: 50vw;
   height: auto;
   border-radius: 100px;
 }
@@ -351,7 +400,6 @@ form {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  max-width: 30%;
   margin: 3% auto;
 }
 
@@ -359,8 +407,8 @@ input, select {
   background-color: white;
   color: #EED3B1;
   border-radius: 10px;
-  width: 100%;
-  padding: 3%;
+  width: 30vw;
+  padding: 1%;
 }
 
 button {
@@ -368,7 +416,8 @@ button {
   color: #444444;
   border: none;
   border-radius: 50px;
-  padding: 3% 10%;
+  margin-top: 2%;
+  padding: 1% 5%;
 }
 
 button:hover {
@@ -380,17 +429,17 @@ button:hover {
 footer p {
   background-color: #cfd8c2;
   color: #f8f6f2;
-  max-width: 100%;
+  max-width: 100vw;
   margin: -1px 0 0;
 }
 
 footer h3 {
   position: fixed;
-  bottom: -3%;
+  bottom: 3%;
   right: 2%;
   background-color: #f8f6f2;
   border-radius: 50px;
-  padding: 2% 3%;
+  padding: 2%;
 }
 
 footer h3 a {
@@ -434,14 +483,18 @@ footer h3 a {
       flex: initial;
     }
 
-    .flex img {
-      width: 40vh;
-      border-radius: 30px;
+    .wellness img {
+      width: 100vw;
+      border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
     }
 
-    .wellness img {
-      width: 100vh;
-      border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
+    .items {
+      width: 50vw;
+      padding: 30% 0;
+    }
+
+    .items1 {
+      width: 100vw;
     }
 
     .order1 {
@@ -454,6 +507,10 @@ footer h3 a {
 
     /* concept */
 
+    #concept {
+      width: 100vw;
+    }
+
     .item:nth-child(1) { transform: translateY(0); }
     .item:nth-child(2) { transform: translateY(0); }
 
@@ -463,23 +520,25 @@ footer h3 a {
 
     /* room & price */
 
-    .room img {
-      width: 40vh;
+    .room img, .flex img {
+      width: 70vw;
       border-radius: 50px;
     }
 
     /* reserve */
 
-    form {
-      max-width: 80%;
-    }
-
     p {
       margin: 3% 0;
     }
 
+    input, select {
+      width: 50vw;
+    }
+
+    /* Apply to all pages ‐ footer */
+
     footer h3 {
-      bottom: 0;
+      bottom: 1%;
     }
 
 }
