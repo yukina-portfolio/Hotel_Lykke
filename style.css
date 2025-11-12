@@ -265,13 +265,13 @@ p {
 
 .wellness img {
   width: 100vw;
-  border-radius: 50% 40% 60% 50% / 50% 60% 40% 50%;
   margin-top: 10%;
 }
 
 .circle3 {
   position: relative;
   border: 3px solid #cfd8c2;
+  margin-top: 5%;
   padding: 5%;
 }
 
@@ -483,17 +483,12 @@ footer h3 a {
       flex: initial;
     }
 
-    .wellness img {
-      width: 100vw !important;
-      border-radius: 50% 40% 60% 50% / 50% 60% 40% 50% !important;
-    }
-
     .items {
       width: 50vw;
       padding: 30% 0;
     }
 
-    .items1 {
+    .items1, #concept {
       width: 100vw;
     }
 
@@ -512,10 +507,6 @@ footer h3 a {
     }
 
     /* concept */
-
-    #concept {
-      width: 100vw;
-    }
 
     .item:nth-child(1) { transform: translateY(0); }
     .item:nth-child(2) { transform: translateY(0); }
